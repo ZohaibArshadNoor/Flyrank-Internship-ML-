@@ -1,0 +1,21 @@
+{
+  "task": "content_refresh_prioritisation",
+  "evaluation_split": "grouped_by_client_id",
+  "test_rows": 7115,
+  "test_clients": 8,
+  "base_declining_rate": 0.5165,
+  "model_precision_at_10": 0.9,
+  "model_precision_at_20": 0.9,
+  "model_precision_at_50": 0.86,
+  "baseline_precision_at_20": 0.55,
+  "baseline_precision_at_50": 0.62,
+  "action_breakdown": {
+    "CTR_METADATA_OPTIMIZE": 12114,
+    "MONITOR_MAINTAIN": 8952,
+    "LIGHT_REVIEW": 8871,
+    "CONSOLIDATE_OR_RETIRE": 47,
+    "REFRESH_AND_EXPAND": 16
+  },
+  "high_priority_refresh_count": 16,
+  "ctr_quickwin_count": 12114
+}
