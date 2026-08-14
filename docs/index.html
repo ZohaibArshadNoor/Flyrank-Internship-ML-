@@ -683,9 +683,45 @@ pip install -r requirements.txt
 python scripts/run_all.py</code></pre>
   </section>
 
-  <!-- 8. Acknowledgments -->
+  <!-- 8. Multi-Audience Translation -->
+  <section id="translation">
+    <h2>8. Multi-Audience Translation & Presentation Synthesis</h2>
+    
+    <h3>A. 5-Minute Technical Presentation Outline</h3>
+    <ol>
+      <li><strong>Minute 1: The Organic Content Decay Problem (0:00–1:00)</strong> — Across large digital portfolios, content inevitably decays due to search algorithm adjustments and obsolescence. Editorial teams cannot manually audit 30,000 pages every week.</li>
+      <li><strong>Minute 2: Baseline Heuristic & Leakage Auditing (1:00–2:00)</strong> — The Week-4 heuristic baseline achieves 55.0% Precision@20. We uncover that sub-window comparison columns artificially inflate AUC to 0.999, and demonstrate how our leakage-free grouped split enforces true cross-client generalization.</li>
+      <li><strong>Minute 3: Supervised Modeling & Evaluation (2:00–3:00)</strong> — Our Gradient Boosting model achieves <strong>90.0% Precision@20</strong> (+35 pp over baseline) across 8 unseen client domains against a 51.7% random base rate.</li>
+      <li><strong>Minute 4: The Content Action Playbook (3:00–4:00)</strong> — The output translates into 4 operational archetypes (<code>REFRESH_AND_EXPAND</code>, <code>CTR_METADATA_OPTIMIZE</code>, etc.) with standardized reason codes and review allocations.</li>
+      <li><strong>Minute 5: Guardrails & Practical Impact (4:00–5:00)</strong> — We review strict human-in-the-loop guardrails (no automated unpublishing or direct CMS rewrites) and conclude with operational value.</li>
+    </ol>
+
+    <h3>B. Methodology Social Cut (LinkedIn / X)</h3>
+    <div class="callout callout-success">
+      <p style="margin-bottom: 0.5rem;">
+        📉 <strong>Content decay in organic search is a silent killer:</strong> in our study of 30,000 pages across 32 enterprise clients, un-updated content showed a 47%–61% decline rate.
+      </p>
+      <p style="margin-bottom: 0.5rem;">
+        For my FlyRank ML Research Capstone, I trained a leakage-free Gradient Boosting ranking pipeline that achieves <strong>90.0% Precision@20</strong> on unseen client domains (vs. a 55.0% heuristic baseline and 51.7% base rate).
+      </p>
+      <p style="margin-bottom: 0.5rem;">
+        Instead of an opaque probability, the model powers an operational Content Action Playbook that routes human editorial bandwidth directly to highest-salvageable-exposure articles.
+      </p>
+      <p style="margin-bottom: 0;">
+        🔗 Live interactive paper & reproducible code: <a href="https://zohaibarshadnoor.github.io/Flyrank-Internship-ML-/" target="_blank" rel="noopener">https://zohaibarshadnoor.github.io/Flyrank-Internship-ML-/</a><br>
+        <em>Built on the FlyRank ML Internship dataset (https://flyrank.ai)</em>
+      </p>
+    </div>
+
+    <h3>C. 3-Sentence Executive Employer Summary</h3>
+    <p style="font-style: italic; color: #334155; border-left: 3px solid var(--accent); padding-left: 1rem;">
+      "To solve organic search content decay across 30,000 pages, I developed an end-to-end supervised ranking pipeline evaluated under strict grouped cross-validation on unseen client portfolios. The Gradient Boosting model achieved 90.0% Precision@20 (+35 percentage points over the heuristic baseline), successfully identifying high-exposure refresh targets without label leakage. I translated the model output into an operational Content Action Playbook with transparent reason codes, human review guardrails, and automated drift triggers, deployed as a public research paper."
+    </p>
+  </section>
+
+  <!-- 9. Acknowledgments -->
   <section id="acknowledgments">
-    <h2>8. Acknowledgments & Data Credit</h2>
+    <h2>9. Acknowledgments & Data Credit</h2>
     <p>
       This research was conducted as part of the FlyRank Machine Learning Internship track under the mentorship of the FlyRank engineering team.
     </p>

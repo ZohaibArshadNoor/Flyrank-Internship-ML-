@@ -142,6 +142,35 @@ We mapped model scores and search properties into four actionable operational ar
 
 ## 9. Acknowledgments & data credit
 
-This research was conducted as part of the FlyRank Machine Learning Internship track.
+This research was conducted as part of the FlyRank Machine Learning Internship track under the mentorship of the FlyRank engineering team.
 
 *Built on the FlyRank ML Internship dataset* — [https://flyrank.ai](https://flyrank.ai).
+
+---
+
+## 10. Multi-Audience Translation (ML-12 Showcase Synthesis)
+
+### A. 5-Minute Live Technical Demo Outline
+1. **Minute 1: The Problem (0:00–1:00)** — The Organic Content Decay Crisis: published pages quietly lose search visibility over 6–12 months. Editors cannot manually audit tens of thousands of articles.
+2. **Minute 2: The Baseline & The Leakage Trap (1:00–2:00)** — Explain the Week-4 rule heuristic (`is_stale × is_visible × log2(impressions)`). Demonstrate how 30-day sub-windows cause artificial 0.999 AUC target leakage and how grouped splitting by client prevents domain memorization.
+3. **Minute 3: The Supervised Model & Cross-Domain Evaluation (2:00–3:00)** — Present the Gradient Boosting classifier achieving **90.0% Precision@20** across 8 unseen client holdouts (vs. 55.0% baseline and 51.7% base rate).
+4. **Minute 4: The Content Action Playbook (3:00–4:00)** — Showcase the operational triage queue mapping articles into 4 actionable archetypes (`REFRESH_AND_EXPAND`, `CTR_METADATA_OPTIMIZE`, etc.) with reason codes and effort allocations.
+5. **Minute 5: Limitations & Guardrails (4:00–5:00)** — Highlight the strict No-Go list (no automated deletions or 301 redirects) and cite the FlyRank dataset credit.
+
+---
+
+### B. Social Post Cut (LinkedIn / X)
+> 📉 Content decay in organic search is a silent killer: in a study of 30,000 pages across 32 clients, un-updated content showed an observed 47%–61% decline rate.
+>
+> For my FlyRank ML Capstone, I trained a leakage-free Gradient Boosting ranking pipeline that achieves **90.0% Precision@20** on unseen client domains (vs a 55.0% rule baseline and 51.7% base rate).
+>
+> Instead of an opaque score, the model powers a Content Action Playbook that routes copywriter hours to highest-salvageable-exposure articles with human review guardrails.
+>
+> 🔗 Live interactive paper & reproducible code: https://zohaibarshadnoor.github.io/Flyrank-Internship-ML-/
+>
+> *Built on the FlyRank ML Internship dataset (https://flyrank.ai)*
+
+---
+
+### C. 3-Sentence Employer Summary
+> *"To solve organic search content decay across 30,000 pages, I developed an end-to-end supervised ranking pipeline evaluated under strict grouped cross-validation on unseen client portfolios. The Gradient Boosting model achieved 90.0% Precision@20 (+35 percentage points over the heuristic baseline), successfully identifying high-exposure refresh targets without label leakage. I translated the model output into an operational Content Action Playbook with transparent reason codes, human review guardrails, and automated drift triggers, deployed as a public research paper."*
